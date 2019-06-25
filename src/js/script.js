@@ -34,8 +34,8 @@ function rollDice() {
     {
     	//alert("keluar"+totmove);
 	temp = totmove+21;
-	alert(temp);
-    	document.getElementById("kotak"+temp).innerHTML = temp+21+"<img id='image"+totmove+"' src='src/img/player1.png' style='visibility: hidden;'>";
+	//alert(temp);
+    	document.getElementById("kotak"+totmove).innerHTML = temp+"<img id='image"+totmove+"' src='src/img/player1.png' style='visibility: hidden;'>";
     }
     else
     {
@@ -55,9 +55,7 @@ function rollDice() {
 	    if(totmove === 1 || totmove === 8 || totmove === 15 || totmove === 22 || totmove ===29 || totmove === 36)
         {
         	//alert("masuk"+totmove);
-		temp = totmove+21;
-		alert(temp);
-        	document.getElementById("kotak"+temp).innerHTML = "<img id='image"+totmove+"' src='src/img/player1.png' style='visibility: visible;'>";
+        	document.getElementById("kotak"+totmove).innerHTML = "<img id='image"+totmove+"' src='src/img/player1.png' style='visibility: visible;'>";
         }
         else
         {
