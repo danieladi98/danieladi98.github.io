@@ -29,7 +29,15 @@ function rollDice() {
     });
     oldlocation = "image"+totmove;
     //alert(oldlocation);
-    document.getElementById(oldlocation).style.visibility = "hidden";
+      if(totmove == 1 || totmove == 8 || totmove == 15 || totmove == 22 || totmove ==29 || totmove == 36)
+    {
+    	alert("keluar"+totmove);
+    	document.getElementById("kotak"+totmove).innerHTML = totmove+"<img id='image"+totmove+"' src='src/img/player1.png' style='visibility: hidden;'>";
+    }
+    else
+    {
+    	document.getElementById(oldlocation).style.visibility = "hidden";
+    }
     
     chance = getRandomNumber(1,100);
     message = "";
@@ -40,7 +48,15 @@ function rollDice() {
         
         newlocation = "image"+totmove;
         //alert(newlocation);
-        document.getElementById(newlocation).style.visibility = "visible";
+        if(totmove == 1 || totmove == 8 || totmove == 15 || totmove == 22 || totmove ==29 || totmove == 36)
+        {
+        	alert("masuk"+totmove);
+        	document.getElementById("kotak"+totmove).innerHTML = "<img id='image"+totmove+"' src='src/img/player1.png' style='visibility: visible;'>";
+        }
+        else
+        {
+        	document.getElementById(newlocation).style.visibility = "visible";
+        }
         localStorage.setItem("month",totmove);
         if(chance <10)
         {
