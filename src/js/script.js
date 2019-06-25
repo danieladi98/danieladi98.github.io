@@ -29,6 +29,7 @@ function rollDice() {
     });
     oldlocation = "image"+totmove;
     //alert(oldlocation);
+	
       if(totmove == 1 || totmove == 8 || totmove == 15 || totmove == 22 || totmove ==29 || totmove == 36)
     {
     	alert("keluar"+totmove);
@@ -48,7 +49,8 @@ function rollDice() {
         
         newlocation = "image"+totmove;
         //alert(newlocation);
-        if(totmove == 1 || totmove == 8 || totmove == 15 || totmove == 22 || totmove ==29 || totmove == 36)
+        totmove = 1;
+	    if(totmove == 1 || totmove == 8 || totmove == 15 || totmove == 22 || totmove ==29 || totmove == 36)
         {
         	alert("masuk"+totmove);
         	document.getElementById("kotak"+totmove).innerHTML = "<img id='image"+totmove+"' src='src/img/player1.png' style='visibility: visible;'>";
