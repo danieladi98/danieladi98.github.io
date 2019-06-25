@@ -33,7 +33,7 @@ function rollDice() {
       if(totmove === 1 || totmove === 8 || totmove === 15 || totmove === 22 || totmove ===29 || totmove === 36)
     {
     	//alert("keluar"+totmove);
-    	document.getElementById("kotak"+totmove).innerHTML = totmove+"<img id='image"+totmove+"' src='src/img/player1.png' style='visibility: hidden;'>";
+    	document.getElementById("kotak"+totmove+21).innerHTML = totmove+21+"<img id='image"+totmove+"' src='src/img/player1.png' style='visibility: hidden;'>";
     }
     else
     {
@@ -53,7 +53,7 @@ function rollDice() {
 	    if(totmove === 1 || totmove === 8 || totmove === 15 || totmove === 22 || totmove ===29 || totmove === 36)
         {
         	//alert("masuk"+totmove);
-        	document.getElementById("kotak"+totmove).innerHTML = "<img id='image"+totmove+"' src='src/img/player1.png' style='visibility: visible;'>";
+        	document.getElementById("kotak"+totmove+21).innerHTML = "<img id='image"+totmove+"' src='src/img/player1.png' style='visibility: visible;'>";
         }
         else
         {
