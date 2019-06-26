@@ -11,6 +11,7 @@ self.addEventListener('install', function(event) {
           '/src/img/logo.png',
           '/src/manifest.json',
           '/offline.html',
+          '/favicon.ico',
           'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'
       ]);
     })
